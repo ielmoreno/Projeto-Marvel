@@ -279,7 +279,7 @@ const openViewModal = async (event)=>{
         main.getElementsByClassName("comicName")[0].innerHTML =`${personagem.comics.name}`;
         main.getElementsByClassName("comicDesc")[0].innerHTML=`${personagem.comics.description}`;
         main.getElementsByClassName("imgComic")[0].src=`${personagem.comics.capa.path}.${personagem.comics.capa.extension}`;
-        main.getElementsByClassName("favChar")[0].setAttribute("onclick",`fav(${charId},${data.data.results[0].name},${data.data.results[0].description},${data.data.results[0].thumbnail.path},${data.data.results[0].thumbnail.extension},${data2.data.results[(data2.data.count - 1)].title},${data2.data.results[(data2.data.count - 1)].description},${data2.data.results[(data2.data.count - 1)].thumbnail.path},${data2.data.results[(data2.data.count - 1)].thumbnail.extension},${data.data.results[0].comics.collectionURI})`)
+        main.getElementsByClassName("touchFavChar")[0].setAttribute("onclick",`fav(${charId},${data.data.results[0].name},${data.data.results[0].description},${data.data.results[0].thumbnail.path},${data.data.results[0].thumbnail.extension},${data2.data.results[(data2.data.count - 1)].title},${data2.data.results[(data2.data.count - 1)].description},${data2.data.results[(data2.data.count - 1)].thumbnail.path},${data2.data.results[(data2.data.count - 1)].thumbnail.extension},${data.data.results[0].comics.collectionURI})`)
         modal.style.display = 'flex'
         
     }

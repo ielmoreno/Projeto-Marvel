@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projeto Vingadores</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="js/main.js"></script>
+</head>
+
+<body onload="loadFav()">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="./" class="active">Personagens</a></li>
+				<li><a href="./favoritos.html">Favoritos</a></li>
+			</ul>
+		</nav>
+		<img src="img/marvel.jpg" />
+	</header>
+	<main>
+
+	</main> 
+	<footer>
+		<h5>Developed by Gabriel Moreno</h5>
+	</footer>
+	<div id="editFormModal" class="eModal" onclick="closeModal(event)">
+		<main class="eMainModal" >
+			<h3>Edição de Personagem</h3>
+			<form id="fomulario">
+				<label for="char">Nome:</label>
+				<input type="text" name='char' id="iNomeChar">
+				<label for="desc">Descrição:</label>
+				<input type="text" name='desc' id="iDescChar">
+				<label for="nameCom">Nome da revista:</label>
+				<input type="text" name='nameCom' id="iComicName">
+				<label for="descCom">Descrição da revista:</label>
+				<input type="text" name='descCom' id="iComicDesc">
+				
+				<div class="botoes">
+					<button onclick="closeModal(null,editFormModal)">Cancelar</button>
+					<button type="submit">Salvar</button>
+				<div>
+			</form>
+		</main>
+	</div>
+	<div id="viewModal" class="modal" onclick="closeModal(event)">
+		<main class="mainModal" >
+			<img class="imgChar" src=""/>
+			<div class="touchFavChar">
+				<img class="favChar" src="img/favoritado.png" />
+			</div>
+			<h3 class="nomeChar"></h3>
+			<h5 class="idChar"></h5>
+			<p class="descChar"></p>
+			<div>
+				<div>
+					<h4 class="comicName"></h4>
+					<p class="comicDesc"></p>
+				</div>
+				<img class="imgComic" src=""/>
+			</div>
+			<buton id="but">Editar</buton>
+		</main>
+	</div>
+</body>
+</html>

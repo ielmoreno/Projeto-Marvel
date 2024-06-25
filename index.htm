@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projeto Vingadores</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="js/main.js"></script>
+</head>
+
+<body onload="loadScreen(1)">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="./" class="active">Personagens</a></li>
+				<li><a href="./favoritos.html">Favoritos</a></li>
+			</ul>
+		</nav>
+		<img src="img/marvel.jpg" />
+	</header>
+	<main>
+		<!-- inserção via js -->
+		<!-- <div class="card" onmouseenter="cardEnter(event)" onmouseleave="cardLeave(event)">
+			<img src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"/>
+			<h3>3-D Man</h3>
+			<p>""</p>
+			<div class="cardOption" id="1011334" onclick="openViewModal(event)">
+			</div>
+		</div>
+		<div class="card" onmouseenter="cardEnter(event)" onmouseleave="cardLeave(event)">
+			<img src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"/>
+			<h3>3-D Man</h3>
+			<p>""</p>
+			<div class="cardOption" id="1011334" onclick="openViewModal(event)">
+			</div>
+		</div>
+		<div class="card" onmouseenter="cardEnter(event)" onmouseleave="cardLeave(event)">
+			<img src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"/>
+			<h3>3-D Man</h3>
+			<p>""</p>
+			<div class="cardOption" id="1011334" onclick="openViewModal(event)">
+			</div>
+		</div>
+		<div class="card" onmouseenter="cardEnter(event)" onmouseleave="cardLeave(event)">
+			<img src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"/>
+			<h3>3-D Man</h3>
+			<p>""</p>
+			<div class="cardOption" id="1011334" onclick="openViewModal(event)">
+			</div>
+		</div>
+		<div class="card" onmouseenter="cardEnter(event)" onmouseleave="cardLeave(event)">
+			<img src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"/>
+			<h3>3-D Man</h3>
+			<p>""</p>
+			<div class="cardOption" id="1011334" onclick="openViewModal(event)">
+			</div>
+		</div>
+		<div class="card" onmouseenter="cardEnter(event)" onmouseleave="cardLeave(event)">
+			<img src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"/>
+			<h3>3-D Man</h3>
+			<p>""</p>
+			<div class="cardOption" id="1011334" onclick="openViewModal(event)">
+			</div>
+		</div>
+		<div class="card" onmouseenter="cardEnter(event)" onmouseleave="cardLeave(event)">
+			<img src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"/>
+			<h3>3-D Man</h3>
+			<p>""</p>
+			<div class="cardOption" id="1011334" onclick="openViewModal(event)">
+			</div>
+		</div>
+		<div class="card" onmouseenter="cardEnter(event)" onmouseleave="cardLeave(event)">
+			<img src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"/>
+			<h3>3-D Man</h3>
+			<p>""</p>
+			<div class="cardOption" id="1011334" onclick="openViewModal(event)">
+			</div>
+		</div> -->
+	</main> 
+	<div id="navigate">
+	
+	</div>
+	<footer>
+		<h5>Developed by Gabriel Moreno</h5>
+	</footer>
+	<!-- <div id="editFormModal" class="modal" onclick="closeModal(event)">
+		<main>
+			<h2>Edit Card Ticker</h2>
+			<form onsubmit="editCard(event)">
+				<label for="bolsa">Bolsa:</label>
+				<input type="text" name="bolsa" id="e-bolsa">
+				<label for="codigo">Código:</label>
+				<input type="text" name="codigo" id="e-codigo">
+				<input type="hidden" name="antigo-codigo" id="e-antigo-codigo">
+				<label for="empresa">Empresa:</label>
+				<input type="text" name="empresa" id="e-empresa">
+				<label for="valor">Valor:</label>
+				<input type="text" name="valor" id="e-valor">
+				<label for="variacao">Variação:</label>
+				<input type="text" name="variacao" id="e-variacao">
+				<label for="nAcoes">Número de Ações:</label>
+				<input type="text" name="nAcoes" id="e-nAcoes">
+				<button>Edit Card</button>
+			</form>
+		</main>
+	</div> -->
+	<div id="viewModal" class="modal" onclick="closeModal(event)">
+		<main class="mainModal" >
+			<img class="imgChar" src=""/>
+			<img class="favChar" src="img/favorito.png" />
+			<h3 class="nomeChar"></h3>
+			<p class="descChar"></p>
+			<div class="comic">
+				<div class="comicTxt">
+					<h4 class="comicName"></h4>
+					<p class="comicDesc"></p>
+				</div>
+				<img class="imgComic" src=""/>
+			</div>
+		</main>
+	</div>
+</body>
+</html>
